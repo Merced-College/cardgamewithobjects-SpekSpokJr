@@ -12,15 +12,14 @@ public:
   int get_value();
   string get_suit();
   string get_rank();
+  
   //setters
   void set_value(int v);
   void set_suit(string s);
   void set_rank(string r);
 
   //print card function
-  void Card::print_card(){
-  cout << suit << " " << rank << " " << value << endl;
-  }
+  void print_card();
 
 private:
   //put data variables here, look below to see what data variables you should have
@@ -42,6 +41,10 @@ void Card::set_value(int v) {value = v;}
 void Card::set_suit(string s) {suit = s;}
 void Card::set_rank(string r) {rank = r;}
 void Card::print_card();
+
+void Card::print_card(){
+  cout << suit << " " << rank << " " << value << endl;
+  }
 
 
 //the rest of the code is working code - if you define your object above
